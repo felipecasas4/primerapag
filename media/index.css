@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "roboto" , sans-serif;
+    margin: 0;
+
+}
+
+h1{ font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+
+button:hover{
+    background-color: rgb(133, 68, 4);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: saddlebrown;
+
+}
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: peru;
+    font-size: 1.6em;
+
+
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.color-acento { color: peru;}
+header a:hover{
+    color: rgb(110, 59, 7);
+}
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/camposembrado.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: black;
+}
+
+
+#somos-Agrocas .container{
+    text-align: center;
+    padding: 200px 12px;
+    
+}
+#Productos{
+    background-color: bisque;
+    color: peru;
+    text-align: center;
+}
+
+#Productos .container{
+   padding: 50px 0px;
+}
+
+#Productos p{
+    display: none;
+}
+
+#Productos h2{
+    font-size: 5em;
+    margin-top: 0;
+}
+
+#Productos .carta{
+    background-size: cover;
+    background-position: center center;
+padding: 50px;
+margin: 20px;
+border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/descarga.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/soja.jpg");
+    
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/poroto.jpg");
+}
+#caracteristica .container{
+    text-align: center;
+    font-weight: bold;
+    background-color: bisque;
+}
+#caracteristica li{
+    margin: 12px 0px;
+   font-weight: bold;
+}
+
+#compraventa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#compraventa h2{
+    font-size: 8vw;
+}
+#compraventa button {
+    font-size: 4vw;
+}
+
+footer{
+    background-color: peru;
+
+}
+footer p{
+    margin: 0;
+    color: bisque;
+}
+footer .container{
+    height: 100px;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+padding-right: 20px;
+    }
+    #somos-agrocas{
+        background-color: peru;
+    }
+     #somos-agrocas .container{
+background-color: rgb(187, 118, 49);
+background-size: auto;
+display: flex;
+padding: 0;
+}
+    
+     #contacto{
+         background-color: peru;
+     }  
+     
+    
+    #productos .Productos3{
+        display: flex;
+        justify-content: center;
+    }
+    #productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+#productos h3{
+    margin-top: 0;
+}
+    #producto.carta {
+
+        padding: 15px;
+    }
+
+}
